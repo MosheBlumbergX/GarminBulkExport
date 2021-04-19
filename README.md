@@ -9,3 +9,20 @@ If you want a different format, change the "tcx" part of the URL to the appropri
 If your connection is too slow to do a full download in less than 3 seconds every time, change the downloadTimeoutLength from 3 * 1000 to whatever number you want (it's 3*1000 because that's 3000 milliseconds = 3 seconds).
 
 It goes from most recent back downloading each one. If you don't put the right total # to download them all, just navigate to the last one it got and re-run from there.*/
+
+
+
+
+
+
+
+## split.sh 
+
+split.sh will split the activities to directories of 10 files, as Strava limit 25 uploads at a time. 
+
+Downloaded activities should go into `$src`, it will end up in `$dest`
+
+```
+export src="/src"
+export dest="dest"
+```
