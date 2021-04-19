@@ -18,7 +18,7 @@ It goes from most recent back downloading each one. If you don't put the right t
 
 ## split.sh 
 
-split.sh will split the activities to directories of 10 files, as Strava limit 25 uploads at a time. 
+split.sh will split (copy) the activities to directories of 10 files, as Strava limit 25 uploads at a time. 
 
 Downloaded activities should go into `$src`, it will end up in `$dest`
 
