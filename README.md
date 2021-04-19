@@ -23,6 +23,6 @@ split.sh will split (copy) the activities to directories of 10 files, as Strava 
 Downloaded activities should go into `$src`, it will end up in `$dest`
 
 ```
-export src="/src"
+export src="src"
 export dest="dest"
 ```
