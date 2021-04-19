@@ -1,6 +1,7 @@
-export src="/tmp/src"
-export dest="/tmp/dest"
+export src="src"
+export dest="dest"
 
+mkdir $dest
 n=0
 for i in ${src}/*
 do
@@ -9,5 +10,5 @@ do
   fi
   todir=${dest}/$n
   [ -d "$todir" ] || mkdir "$todir" 
-  mv "$i" "$todir" 
+  cp "$i" "$todir" 
 done
